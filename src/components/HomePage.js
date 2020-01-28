@@ -3,11 +3,18 @@ import React from 'react';
 export default function HomePage() {
   return (
     <div>
-      <h1>Home</h1>
-
       {/* Hero Area Start */}
       <div id="hero-area" className="hero-area-bg">
-        <div className="overlay" />
+        <div className="overlay">
+          <video
+            playsInline="playsinline"
+            autoPlay="autoplay"
+            muted="muted"
+            loop="loop"
+          >
+            <source src="/img/background/bg_vid.mov" type="video/mp4" />
+          </video>
+        </div>
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 text-center">
